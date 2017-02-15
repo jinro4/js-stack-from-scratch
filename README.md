@@ -12,27 +12,31 @@
 [![Chai](/img/chai.png)](http://chaijs.com/)
 [![Flow](/img/flow.png)](https://flowtype.org/)
 
-Welcome to my modern JavaScript stack tutorial: **JavaScript Stack from Scratch**.
+모던 자바스크립트 스택 튜토리얼에 온 것을 환영합니다: **JavaScript Stack from Scratch**.
 
-> ⚠️️ A major update of the tutorial will be available before the end of February, so wait a bit! [Read more](https://github.com/verekia/js-stack-from-scratch/issues/133).
+> ⚠️️ 이 자습서의 주요 업데이트가 2월 안에 제공될 예정입니다, 조금만 기다려주세요! [Read more](https://github.com/verekia/js-stack-from-scratch/issues/133).
 
-This is a minimalistic and straight-to-the-point guide to assembling a JavaScript stack. It requires some general programming knowledge, and JavaScript basics. **It focuses on wiring tools together** and giving you the **simplest possible example** for each tool. You can see this tutorial as *a way to write your own boilerplate from scratch*.
+본 내용은 JavaScript 스택을 조립하기 위한 최소한의 지침입니다. 일반적인 프로그래밍 지식과 JavaScript 기초가 필요합니다. 또한 **연결된 도구들을 함께** 사용하는 것에 초점을 맞추고 각 도구에 대해 **가능한 가장 간단한 예제를 제공합니다.** 이 자습서는 *나만의 상용구(boilerplate) 만들기* 로 볼 수도 있습니다.
 
-You don't need to use this entire stack if you build a simple web page with a few JS interactions of course (a combination of Browserify/Webpack + Babel + jQuery is enough to be able to write ES6 code in different files with CLI compilation), but if you want to build a web app that scales, and need help setting things up, this tutorial will work great for you.
+물론 몇 가지 JS 상호 작용이 포함 된 간단한 웹 페이지를 작성하는 경우 전체 스택을 사용할 필요는 없습니다. (Browserify / Webpack + Babel + jQuery의 조합으로 CLI 컴파일을 사용하여 다른 파일에 ES6 코드를 작성할 수 있습니다.) 하지만 확장성 있는 웹 애플리케이션을 만들거나 설정하려는데 도움이 필요하다면 이 자습서는 여러분에게 도움이 될 것 입니다.
 
-Since the goal of this tutorial is to assemble various tools, I do not go into details about how these tools work individually. Refer to their documentation or find other tutorials if you want to acquire deeper knowledge in them.
+이 튜토리얼의 목표는 다양한 도구를 조합하는 것이므로 각 도구들이 어떻게 작동하는지에 대해서는 자세히 설명하지 않습니다. 만약 더 깊은 지식을 얻기 원할 경우 해당 도구의 공식 문서를 참조하거나 다른 자습서를 찾아보세요.
 
-A big chunk of the stack described in this tutorial uses React. If you are beginning and just want to learn React, [create-react-app](https://github.com/facebookincubator/create-react-app) will get you up and running with a React environment very quickly with a premade configuration. I would for instance recommend this approach to someone who arrives in a team that's using React and needs to catch up with a learning playground. In this tutorial you won't use a premade configuration, because I want you to understand everything that's happening under the hood.
+이 튜토리얼에서 설명할 스택의 큰 덩어리는 React가 차지합니다. 만약 여러분이 React를 배우고 싶다면, [create-react-app](https://github.com/facebookincubator/create-react-app)은 미리 만들어놓은 사전 설정을 통해 매우 빠르게 React 환경을 기동 할 수 있게 해줍니다.
 
-Code examples are available for each chapter, and you can run them all with `yarn && yarn start` or `npm install && npm start`. I recommend writing everything from scratch yourself by following the **step-by-step instructions** of each chapter.
+예를 들어 누군가 React를 사용하는 팀에 합류해서 빠르게 React를 학습시키고 가지고 놀게 하고 싶다면 `create-react-app`을 사용하는 접근법도 괜찮습니다.
 
-**Every chapter contains the code of previous chapters**, so if you are simply looking for a boilerplate project containing everything, just clone the last chapter and you're good to go.
+하지만 이 자습서에서는 사전 설정을 사용하지 않을 것입니다. 왜냐하면 저는 여러분들이 내부적으로 일어나고 있는 모든 과정을 이해하길 원하기 때문입니다.
 
-Note: The order of chapters is not necessarily the most educational. For instance, testing / type checking could have been done before introducing React. It is quite difficult to move chapters around or edit past ones, since I need to apply those changes to every following chapter. If things settle down, I might reorganize the whole thing in a better way.
+코드 예제는 각 장에서 사용할 수 있으며`yarn && yarn start` 또는`npm install && npm start`로 모두 실행할 수 있습니다. 각 장의 **단계별 지침**을 따라 처음부터 모든 것을 직접 작성하는 것을 추천 드립니다.
 
-The code of this tutorial works on Linux, macOS, and Windows.
+**모든 장에는 이전 장의 코드**가 포함되어 있습니다. 따라서 모든 내용이 포함 된 상용구(boilerplate) 프로젝트를 찾고 있다면 마지막 장을 복제하면 됩니다.
 
-## Table of contents
+참고: 각 장의 순서가 무조건 옳지는 않습니다. 예를 들어, React를 도입하기 전에 테스트 / 타입 검증을 진행 할 수도 있습니다. 자습을 진행하는 중에 다른 장, 혹은 이전 장을 수정하는 것은 쉽지 않습니다. 이후의 진행될 모든 장에 변경 사항을 적용해야하기 때문입니다. 여유가 생기면 더 좋은 방법을 고민해보겠습니다.
+
+이 자습서의 코드는 Linux, macOS, Windows에서 동작합니다.
+
+## 목차
 
 [1 - Node, NPM, Yarn, and package.json](/tutorial/1-node-npm-yarn-package-json)
 
@@ -58,9 +62,9 @@ The code of this tutorial works on Linux, macOS, and Windows.
 
 [12 - Type Checking with Flow](/tutorial/12-flow)
 
-## Coming up next
+## 이후에 진행할 것들
 
-Production / development environments, Express, React Router, Server-Side Rendering, Styling, Enzyme, Git Hooks.
+운영 / 개발 환경 설정, Express, React Router, 서버-사이드 렌더링, 스타일링, Enzyme, Git Hooks.
 
 ## Translations
 
@@ -69,8 +73,9 @@ Production / development environments, Express, React Router, Server-Side Render
 - [日本語](https://github.com/takahashim/js-stack-from-scratch) by [@takahashim](https://github.com/takahashim)
 - [Русский](https://github.com/UsulPro/js-stack-from-scratch) by [React Theming](https://github.com/sm-react/react-theming)
 - [ไทย](https://github.com/MicroBenz/js-stack-from-scratch) by [MicroBenz](https://github.com/MicroBenz)
+- [한국어](https://github.com/jinro4/js-stack-from-scratch) by [Tamm](https://github.com/jinro4)
 
-If you want to add your translation, please read the [translation recommendations](/how-to-translate.md) to get started!
+만약 새로운 번역을 추가하고 싶다면 [translation recommendations](/how-to-translate.md)를 읽고 시작하세요!
 
 ## Credits
 
