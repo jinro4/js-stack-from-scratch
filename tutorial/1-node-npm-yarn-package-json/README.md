@@ -52,4 +52,4 @@ yarn-error.log
 
 다음 절: [2 - Installing and using a package](/tutorial/2-packages)
 
-[목차로 돌아가기](https://github.com/verekia/js-stack-from-scratch#table-of-contents)
+[목차로 돌아가기](https://github.com/jinro4/js-stack-from-scratch#table-of-contents)
